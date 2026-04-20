@@ -69,8 +69,8 @@ export async function POST(req) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: 'JP Perforaciones <web@jpperforaciones.com.ec>',
-      to: ['contacto@jpperforaciones.com.ec'], // Dirección destino real
+      from: 'JP Perforaciones <onboarding@resend.dev>',
+      to: ['parramedinajuanmanuel@gmail.com'], // Tu correo personal para recibir las consultas
       subject: `NUEVA CONSULTA: ${subject.toUpperCase()} - ${name}`,
       html: `
         <div style="font-family: sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e1e1e1; border-radius: 8px; overflow: hidden;">
