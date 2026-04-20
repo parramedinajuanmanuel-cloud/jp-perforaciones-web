@@ -42,6 +42,13 @@ export const metadata = {
   },
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1, // Esto evita que el usuario pueda ampliar pellizando
+  userScalable: false, // Completa el bloqueo de zoom
+};
+
 export default function RootLayout({ children }) {
   return (
     <html
