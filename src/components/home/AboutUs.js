@@ -252,9 +252,27 @@ export default function AboutUs() {
         @media (max-width: 968px) {
           .about-container {
             grid-template-columns: 1fr;
+            gap: 2rem;
           }
           .about-image {
             order: 2;
+            padding: 10px;
+          }
+          .accent-border {
+            top: -10px;
+            left: -10px;
+          }
+          .experience-badge {
+            bottom: -15px;
+            right: -10px;
+            padding: 15px;
+          }
+          .about-content h2 {
+            font-size: 2rem;
+          }
+          .about-stats-mini {
+            flex-direction: column;
+            gap: 1rem;
           }
         }
       `}</style>

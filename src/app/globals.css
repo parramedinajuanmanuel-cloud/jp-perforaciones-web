@@ -29,10 +29,19 @@
   padding: 0;
 }
 
-html, body {
+html {
   background-color: var(--color-bg-white);
   color: var(--color-text-main);
   scroll-behavior: smooth;
+  overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+body {
+  background-color: var(--color-bg-white);
+  color: var(--color-text-main);
+  overflow-x: hidden; /* Doble protección contra desbordamiento */
+  touch-action: pan-y; /* Bloquea zoom por pellizco, solo permite scroll vertical */
+  -webkit-text-size-adjust: 100%; /* Evita que Safari agrande texto automáticamente */
 }
 
 a {

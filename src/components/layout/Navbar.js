@@ -77,6 +77,28 @@ export default function Navbar() {
         .nav-cta a {
           font-size: 0.9rem;
         }
+
+        /* ===== RESPONSIVE MOBILE ===== */
+        @media (max-width: 768px) {
+          .nav-container {
+            height: 60px;
+            padding: 0 1rem;
+          }
+
+          .nav-logo img {
+            height: 90px !important;
+            margin-top: -20px !important;
+            margin-bottom: -20px !important;
+          }
+
+          .nav-links {
+            display: none !important;
+          }
+
+          .nav-cta {
+            display: none !important;
+          }
+        }
       `}</style>
     </nav>
   );
